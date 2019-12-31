@@ -6,6 +6,7 @@
 //  Copyright © 2019 Zhia Yang. All rights reserved.
 //
 
+#import <os/log.h>
 #import <Cocoa/Cocoa.h>
 #import <QuickLook/QuickLook.h>
 #import <Foundation/Foundation.h>
@@ -41,11 +42,14 @@ extern "C" OSStatus GenerateThumbnailForURL(void* thisInterface, QLThumbnailRequ
 		auto url = (__bridge NSURL*) _url;
 		auto path = [url path];
 
-		NSLog(@"[qlthumbnail]: generating thumbnail for path: %@", path);
+		os_log_info(OS_LOG_DEFAULT, "[mkvQLGen]: attempting to generate thumbnail for:   %@", path);
 
 		auto ca = getAttachedCoverArt([path UTF8String]);
 		if(!ca.data || !ca.size)
+		{
+			os_log_error(OS_LOG_DEFAULT, "[mkvQLGen]: failed to get cover art for:   %@", path);
 			return kQLReturnNoError;
+		}
 
 		auto cfd = CFDataCreateWithBytesNoCopy(NULL, ca.data, ca.size, kCFAllocatorNull);
 		auto cgp = CGDataProviderCreateWithCFData(cfd);
@@ -64,7 +68,7 @@ extern "C" OSStatus GenerateThumbnailForURL(void* thisInterface, QLThumbnailRequ
 		else
 			flavourKey = (__bridge NSString*) kQLThumbnailPropertyIconFlavorKey_10_5;
 
-		
+
 		auto dict = @{
 			flavourKey: @(kQLThumbnailIconGlossFlavor)
 		};
@@ -73,9 +77,10 @@ extern "C" OSStatus GenerateThumbnailForURL(void* thisInterface, QLThumbnailRequ
 		CGImageRelease(image);
 
 		freeCoverArt(ca);
-	}
 
-	return kQLReturnNoError;
+		os_log_info(OS_LOG_DEFAULT, "[mkvQLGen]: thumbnail successfully generated");
+		return kQLReturnNoError;
+	}
 }
 
 extern "C" void CancelThumbnailGeneration(void* thisInterface, QLThumbnailRequestRef thumbnail)

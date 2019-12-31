@@ -10,6 +10,9 @@
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>org.matroska.mkv</string>
+				<string>org.perian.matroska</string>
+				<string>io.iina.mkv</string>
+				<string>io.mpv.mkv</string>
 				<string>public.movie</string>
 			</array>
 		</dict>
@@ -54,5 +57,26 @@
 	<string>Copyright © 2019 Zhia Yang. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+				<string>public.movie</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Matroska Video File</string>
+			<key>UTTypeIdentifier</key>
+			<string>org.matroska.mkv</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>mkv</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
