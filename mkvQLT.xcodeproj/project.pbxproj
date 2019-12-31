@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B05079523B6434D00A9BDB9 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B05079423B6434D00A9BDB9 /* QuickLookThumbnailing.framework */; };
+		2B05079723B6434D00A9BDB9 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B05079623B6434D00A9BDB9 /* Quartz.framework */; };
+		2B05079A23B6434D00A9BDB9 /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05079923B6434D00A9BDB9 /* ThumbnailProvider.swift */; };
+		2B1DB53D23BB4FD50025DA35 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B88594623B8CBD9009B1820 /* libavcodec.a */; };
+		2B1DB53E23BB4FD50025DA35 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B88594823B8CBDC009B1820 /* libavformat.a */; };
+		2B1DB53F23BB4FD50025DA35 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B88594A23B8CBDF009B1820 /* libavutil.a */; };
+		2B1DB54023BB4FD90025DA35 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5A361E23B8ACD9000A80CF /* QuickLook.framework */; };
+		2B459B7523BB0C57005B0FA1 /* GenerateThumbnailForURL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B459B7423BB0C57005B0FA1 /* GenerateThumbnailForURL.mm */; };
+		2B459B7723BB4AD7005B0FA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B459B7623BB4AD7005B0FA1 /* main.m */; };
+		2B459B7923BB4B08005B0FA1 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B459B7823BB4B08005B0FA1 /* GeneratePreviewForURL.m */; };
+		2B459B7A23BB4E21005B0FA1 /* libav-wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B88592D23B8C3B7009B1820 /* libav-wrapper.mm */; };
+		2B5A362123B8B19A000A80CF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5A362023B8B19A000A80CF /* Media.xcassets */; };
+		2B88592E23B8C3B7009B1820 /* libav-wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B88592D23B8C3B7009B1820 /* libav-wrapper.mm */; };
+		2B88594523B8CB56009B1820 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5A361E23B8ACD9000A80CF /* QuickLook.framework */; };
+		2B88594723B8CBD9009B1820 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B88594623B8CBD9009B1820 /* libavcodec.a */; };
+		2B88594923B8CBDD009B1820 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B88594823B8CBDC009B1820 /* libavformat.a */; };
+		2B88594B23B8CBDF009B1820 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B88594A23B8CBDF009B1820 /* libavutil.a */; };
+		2B88594C23B8CE74009B1820 /* libavutil.a in Resources */ = {isa = PBXBuildFile; fileRef = 2B88594A23B8CBDF009B1820 /* libavutil.a */; };
+		2B88594D23B8CE79009B1820 /* libavformat.a in Resources */ = {isa = PBXBuildFile; fileRef = 2B88594823B8CBDC009B1820 /* libavformat.a */; };
+		2B88594E23B8CE7B009B1820 /* libavcodec.a in Resources */ = {isa = PBXBuildFile; fileRef = 2B88594623B8CBD9009B1820 /* libavcodec.a */; };
+		2BD4C5BE23B9ED9A006F65EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD4C5BD23B9ED9A006F65EF /* AppDelegate.swift */; };
+		2BD4C5C023B9ED9A006F65EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD4C5BF23B9ED9A006F65EF /* ViewController.swift */; };
+		2BD4C5C223B9ED9E006F65EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD4C5C123B9ED9E006F65EF /* Assets.xcassets */; };
+		2BD4C5C523B9ED9E006F65EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD4C5C323B9ED9E006F65EF /* Main.storyboard */; };
+		2BD4C5CB23B9EDB4006F65EF /* Stuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD4C5B023B9E4CD006F65EF /* Stuff.swift */; };
+		2BD4C5CC23B9EEC4006F65EF /* qlThumbnailExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B05079223B6434D00A9BDB9 /* qlThumbnailExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2BF3FF4A23BB55CD007B06F4 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B05079623B6434D00A9BDB9 /* Quartz.framework */; };
+		2BF3FF4D23BB55CD007B06F4 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3FF4C23BB55CD007B06F4 /* PreviewViewController.swift */; };
+		2BF3FF5023BB55CD007B06F4 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF3FF4E23BB55CD007B06F4 /* PreviewViewController.xib */; };
+		2BF3FF5523BB55CD007B06F4 /* qlPreviewExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2BF3FF4923BB55CD007B06F4 /* qlPreviewExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BD4C5CD23B9EEC4006F65EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B05077023B6432600A9BDB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B05079123B6434D00A9BDB9;
+			remoteInfo = qlThumbnailExt;
+		};
+		2BF3FF5323BB55CD007B06F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B05077023B6432600A9BDB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF3FF4823BB55CD007B06F4;
+			remoteInfo = qlPreviewExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BD4C5CF23B9EEC4006F65EF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2BF3FF5523BB55CD007B06F4 /* qlPreviewExt.appex in Embed App Extensions */,
+				2BD4C5CC23B9EEC4006F65EF /* qlThumbnailExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B05079223B6434D00A9BDB9 /* qlThumbnailExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = qlThumbnailExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B05079423B6434D00A9BDB9 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		2B05079623B6434D00A9BDB9 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		2B05079923B6434D00A9BDB9 /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
+		2B05079B23B6434D00A9BDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B05079C23B6434D00A9BDB9 /* qlThumbnailExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = qlThumbnailExt.entitlements; sourceTree = "<group>"; };
+		2B459B6923BB094C005B0FA1 /* libav-wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libav-wrapper.h"; sourceTree = "<group>"; };
+		2B459B6E23BB09A9005B0FA1 /* mkvQLGen.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mkvQLGen.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B459B7023BB09A9005B0FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B459B7423BB0C57005B0FA1 /* GenerateThumbnailForURL.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GenerateThumbnailForURL.mm; sourceTree = "<group>"; };
+		2B459B7623BB4AD7005B0FA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B459B7823BB4B08005B0FA1 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		2B5A361E23B8ACD9000A80CF /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		2B5A362023B8B19A000A80CF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		2B88591623B8BB5D009B1820 /* qlThumbnailExt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qlThumbnailExt-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B88592D23B8C3B7009B1820 /* libav-wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "libav-wrapper.mm"; sourceTree = "<group>"; };
+		2B88592F23B8C5AF009B1820 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		2B88593123B8C5B3009B1820 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2B88593323B8C986009B1820 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2B88593423B8C996009B1820 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		2B88593523B8C99E009B1820 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		2B88593923B8C9CB009B1820 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2B88593B23B8C9E3009B1820 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		2B88593D23B8C9EB009B1820 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		2B88593F23B8CA04009B1820 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2B88594323B8CA53009B1820 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		2B88594623B8CBD9009B1820 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavcodec.a; sourceTree = "<group>"; };
+		2B88594823B8CBDC009B1820 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavformat.a; sourceTree = "<group>"; };
+		2B88594A23B8CBDF009B1820 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../../../../usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavutil.a; sourceTree = "<group>"; };
+		2BD4C5B023B9E4CD006F65EF /* Stuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stuff.swift; sourceTree = "<group>"; };
+		2BD4C5BB23B9ED9A006F65EF /* mkvQLT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mkvQLT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD4C5BD23B9ED9A006F65EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BD4C5BF23B9ED9A006F65EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BD4C5C123B9ED9E006F65EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BD4C5C423B9ED9E006F65EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BD4C5C623B9ED9E006F65EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD4C5C723B9ED9E006F65EF /* mkvQLT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mkvQLT.entitlements; sourceTree = "<group>"; };
+		2BF3FF4923BB55CD007B06F4 /* qlPreviewExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = qlPreviewExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF3FF4C23BB55CD007B06F4 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		2BF3FF4F23BB55CD007B06F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreviewViewController.xib; sourceTree = "<group>"; };
+		2BF3FF5123BB55CD007B06F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF3FF5223BB55CD007B06F4 /* qlPreviewExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = qlPreviewExt.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B05078F23B6434D00A9BDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B05079523B6434D00A9BDB9 /* QuickLookThumbnailing.framework in Frameworks */,
+				2B88594523B8CB56009B1820 /* QuickLook.framework in Frameworks */,
+				2B05079723B6434D00A9BDB9 /* Quartz.framework in Frameworks */,
+				2B88594923B8CBDD009B1820 /* libavformat.a in Frameworks */,
+				2B88594723B8CBD9009B1820 /* libavcodec.a in Frameworks */,
+				2B88594B23B8CBDF009B1820 /* libavutil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B459B6B23BB09A9005B0FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1DB54023BB4FD90025DA35 /* QuickLook.framework in Frameworks */,
+				2B1DB53D23BB4FD50025DA35 /* libavcodec.a in Frameworks */,
+				2B1DB53E23BB4FD50025DA35 /* libavformat.a in Frameworks */,
+				2B1DB53F23BB4FD50025DA35 /* libavutil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD4C5B823B9ED9A006F65EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3FF4623BB55CD007B06F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF3FF4A23BB55CD007B06F4 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B05076F23B6432600A9BDB9 = {
+			isa = PBXGroup;
+			children = (
+				2B459B6823BB0932005B0FA1 /* util */,
+				2B05079823B6434D00A9BDB9 /* qlThumbnailExt */,
+				2BF3FF4B23BB55CD007B06F4 /* qlPreviewExt */,
+				2B459B6F23BB09A9005B0FA1 /* mkvQLGen */,
+				2BD4C5BC23B9ED9A006F65EF /* mkvQLT */,
+				2B05079323B6434D00A9BDB9 /* Frameworks */,
+				2B05077923B6432600A9BDB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B05077923B6432600A9BDB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B05079223B6434D00A9BDB9 /* qlThumbnailExt.appex */,
+				2BD4C5BB23B9ED9A006F65EF /* mkvQLT.app */,
+				2B459B6E23BB09A9005B0FA1 /* mkvQLGen.qlgenerator */,
+				2BF3FF4923BB55CD007B06F4 /* qlPreviewExt.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B05079323B6434D00A9BDB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B88594A23B8CBDF009B1820 /* libavutil.a */,
+				2B88594823B8CBDC009B1820 /* libavformat.a */,
+				2B88594623B8CBD9009B1820 /* libavcodec.a */,
+				2B88594323B8CA53009B1820 /* VideoToolbox.framework */,
+				2B88593F23B8CA04009B1820 /* AudioToolbox.framework */,
+				2B88593D23B8C9EB009B1820 /* CoreAudioKit.framework */,
+				2B88593B23B8C9E3009B1820 /* CoreVideo.framework */,
+				2B88593923B8C9CB009B1820 /* CoreMedia.framework */,
+				2B88593523B8C99E009B1820 /* libiconv.tbd */,
+				2B88593423B8C996009B1820 /* libbz2.tbd */,
+				2B88593323B8C986009B1820 /* libz.tbd */,
+				2B88593123B8C5B3009B1820 /* AVFoundation.framework */,
+				2B88592F23B8C5AF009B1820 /* CoreAudio.framework */,
+				2B5A361E23B8ACD9000A80CF /* QuickLook.framework */,
+				2B05079423B6434D00A9BDB9 /* QuickLookThumbnailing.framework */,
+				2B05079623B6434D00A9BDB9 /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B05079823B6434D00A9BDB9 /* qlThumbnailExt */ = {
+			isa = PBXGroup;
+			children = (
+				2B05079923B6434D00A9BDB9 /* ThumbnailProvider.swift */,
+				2B05079B23B6434D00A9BDB9 /* Info.plist */,
+				2B88591623B8BB5D009B1820 /* qlThumbnailExt-Bridging-Header.h */,
+				2B05079C23B6434D00A9BDB9 /* qlThumbnailExt.entitlements */,
+				2B5A362023B8B19A000A80CF /* Media.xcassets */,
+			);
+			path = qlThumbnailExt;
+			sourceTree = "<group>";
+		};
+		2B459B6823BB0932005B0FA1 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				2B88592D23B8C3B7009B1820 /* libav-wrapper.mm */,
+				2B459B6923BB094C005B0FA1 /* libav-wrapper.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		2B459B6F23BB09A9005B0FA1 /* mkvQLGen */ = {
+			isa = PBXGroup;
+			children = (
+				2B459B7023BB09A9005B0FA1 /* Info.plist */,
+				2B459B7623BB4AD7005B0FA1 /* main.m */,
+				2B459B7423BB0C57005B0FA1 /* GenerateThumbnailForURL.mm */,
+				2B459B7823BB4B08005B0FA1 /* GeneratePreviewForURL.m */,
+			);
+			path = mkvQLGen;
+			sourceTree = "<group>";
+		};
+		2BD4C5BC23B9ED9A006F65EF /* mkvQLT */ = {
+			isa = PBXGroup;
+			children = (
+				2BD4C5B023B9E4CD006F65EF /* Stuff.swift */,
+				2BD4C5BD23B9ED9A006F65EF /* AppDelegate.swift */,
+				2BD4C5BF23B9ED9A006F65EF /* ViewController.swift */,
+				2BD4C5C123B9ED9E006F65EF /* Assets.xcassets */,
+				2BD4C5C323B9ED9E006F65EF /* Main.storyboard */,
+				2BD4C5C623B9ED9E006F65EF /* Info.plist */,
+				2BD4C5C723B9ED9E006F65EF /* mkvQLT.entitlements */,
+			);
+			path = mkvQLT;
+			sourceTree = "<group>";
+		};
+		2BF3FF4B23BB55CD007B06F4 /* qlPreviewExt */ = {
+			isa = PBXGroup;
+			children = (
+				2BF3FF4C23BB55CD007B06F4 /* PreviewViewController.swift */,
+				2BF3FF4E23BB55CD007B06F4 /* PreviewViewController.xib */,
+				2BF3FF5123BB55CD007B06F4 /* Info.plist */,
+				2BF3FF5223BB55CD007B06F4 /* qlPreviewExt.entitlements */,
+			);
+			path = qlPreviewExt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B05079123B6434D00A9BDB9 /* qlThumbnailExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B0507A023B6434D00A9BDB9 /* Build configuration list for PBXNativeTarget "qlThumbnailExt" */;
+			buildPhases = (
+				2B05078E23B6434D00A9BDB9 /* Sources */,
+				2B05078F23B6434D00A9BDB9 /* Frameworks */,
+				2B05079023B6434D00A9BDB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qlThumbnailExt;
+			productName = qlThumbnailExt;
+			productReference = 2B05079223B6434D00A9BDB9 /* qlThumbnailExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2B459B6D23BB09A9005B0FA1 /* mkvQLGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B459B7123BB09A9005B0FA1 /* Build configuration list for PBXNativeTarget "mkvQLGen" */;
+			buildPhases = (
+				2B459B6A23BB09A9005B0FA1 /* Sources */,
+				2B459B6B23BB09A9005B0FA1 /* Frameworks */,
+				2B459B6C23BB09A9005B0FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mkvQLGen;
+			productName = mkvQLGen;
+			productReference = 2B459B6E23BB09A9005B0FA1 /* mkvQLGen.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2BD4C5BA23B9ED9A006F65EF /* mkvQLT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BD4C5C823B9ED9E006F65EF /* Build configuration list for PBXNativeTarget "mkvQLT" */;
+			buildPhases = (
+				2BD4C5B723B9ED9A006F65EF /* Sources */,
+				2BD4C5B823B9ED9A006F65EF /* Frameworks */,
+				2BD4C5B923B9ED9A006F65EF /* Resources */,
+				2BD4C5CF23B9EEC4006F65EF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BD4C5CE23B9EEC4006F65EF /* PBXTargetDependency */,
+				2BF3FF5423BB55CD007B06F4 /* PBXTargetDependency */,
+			);
+			name = mkvQLT;
+			productName = mkvQLT;
+			productReference = 2BD4C5BB23B9ED9A006F65EF /* mkvQLT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BF3FF4823BB55CD007B06F4 /* qlPreviewExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF3FF5823BB55CD007B06F4 /* Build configuration list for PBXNativeTarget "qlPreviewExt" */;
+			buildPhases = (
+				2BF3FF4523BB55CD007B06F4 /* Sources */,
+				2BF3FF4623BB55CD007B06F4 /* Frameworks */,
+				2BF3FF4723BB55CD007B06F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qlPreviewExt;
+			productName = qlPreviewExt;
+			productReference = 2BF3FF4923BB55CD007B06F4 /* qlPreviewExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B05077023B6432600A9BDB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Zhia Yang";
+				TargetAttributes = {
+					2B05079123B6434D00A9BDB9 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1130;
+					};
+					2B459B6D23BB09A9005B0FA1 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					2BD4C5BA23B9ED9A006F65EF = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					2BF3FF4823BB55CD007B06F4 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 2B05077323B6432600A9BDB9 /* Build configuration list for PBXProject "mkvQLT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B05076F23B6432600A9BDB9;
+			productRefGroup = 2B05077923B6432600A9BDB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BD4C5BA23B9ED9A006F65EF /* mkvQLT */,
+				2B05079123B6434D00A9BDB9 /* qlThumbnailExt */,
+				2B459B6D23BB09A9005B0FA1 /* mkvQLGen */,
+				2BF3FF4823BB55CD007B06F4 /* qlPreviewExt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B05079023B6434D00A9BDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5A362123B8B19A000A80CF /* Media.xcassets in Resources */,
+				2B88594C23B8CE74009B1820 /* libavutil.a in Resources */,
+				2B88594E23B8CE7B009B1820 /* libavcodec.a in Resources */,
+				2B88594D23B8CE79009B1820 /* libavformat.a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B459B6C23BB09A9005B0FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD4C5B923B9ED9A006F65EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD4C5C223B9ED9E006F65EF /* Assets.xcassets in Resources */,
+				2BD4C5C523B9ED9E006F65EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3FF4723BB55CD007B06F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF3FF5023BB55CD007B06F4 /* PreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B05078E23B6434D00A9BDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B88592E23B8C3B7009B1820 /* libav-wrapper.mm in Sources */,
+				2B05079A23B6434D00A9BDB9 /* ThumbnailProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B459B6A23BB09A9005B0FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B459B7A23BB4E21005B0FA1 /* libav-wrapper.mm in Sources */,
+				2B459B7723BB4AD7005B0FA1 /* main.m in Sources */,
+				2B459B7523BB0C57005B0FA1 /* GenerateThumbnailForURL.mm in Sources */,
+				2B459B7923BB4B08005B0FA1 /* GeneratePreviewForURL.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD4C5B723B9ED9A006F65EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD4C5CB23B9EDB4006F65EF /* Stuff.swift in Sources */,
+				2BD4C5C023B9ED9A006F65EF /* ViewController.swift in Sources */,
+				2BD4C5BE23B9ED9A006F65EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF3FF4523BB55CD007B06F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF3FF4D23BB55CD007B06F4 /* PreviewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BD4C5CE23B9EEC4006F65EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B05079123B6434D00A9BDB9 /* qlThumbnailExt */;
+			targetProxy = 2BD4C5CD23B9EEC4006F65EF /* PBXContainerItemProxy */;
+		};
+		2BF3FF5423BB55CD007B06F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF3FF4823BB55CD007B06F4 /* qlPreviewExt */;
+			targetProxy = 2BF3FF5323BB55CD007B06F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BD4C5C323B9ED9E006F65EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BD4C5C423B9ED9E006F65EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BF3FF4E23BB55CD007B06F4 /* PreviewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BF3FF4F23BB55CD007B06F4 /* Base */,
+			);
+			name = PreviewViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B05078923B6432A00A9BDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_CONSTANT_MACROS,
+					DEBUG,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B05078A23B6432A00A9BDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = __STDC_CONSTANT_MACROS;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2B0507A123B6434D00A9BDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = qlThumbnailExt/qlThumbnailExt.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 49F59MY7Q4;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = qlThumbnailExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/ffmpeg/4.2.1_2/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiayang.mkvQLT.qlThumbnailExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "qlThumbnailExt/qlThumbnailExt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2B0507A223B6434D00A9BDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = qlThumbnailExt/qlThumbnailExt.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 49F59MY7Q4;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = qlThumbnailExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/ffmpeg/4.2.1_2/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiayang.mkvQLT.qlThumbnailExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "qlThumbnailExt/qlThumbnailExt-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2B459B7223BB09A9005B0FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 49F59MY7Q4;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = mkvQLGen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+					/usr/local/Cellar/ffmpeg/4.2.1_2/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiayang.mkvQLGen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		2B459B7323BB09A9005B0FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 49F59MY7Q4;
+				INFOPLIST_FILE = mkvQLGen/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+					/usr/local/Cellar/ffmpeg/4.2.1_2/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiayang.mkvQLGen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+		2BD4C5C923B9ED9E006F65EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = mkvQLT/mkvQLT.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 49F59MY7Q4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = mkvQLT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiayang.mkvQLT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2BD4C5CA23B9ED9E006F65EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = mkvQLT/mkvQLT.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 49F59MY7Q4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = mkvQLT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiayang.mkvQLT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2BF3FF5623BB55CD007B06F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = qlPreviewExt/qlPreviewExt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49F59MY7Q4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = qlPreviewExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiayang.mkvQLT.qlPreviewExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2BF3FF5723BB55CD007B06F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = qlPreviewExt/qlPreviewExt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49F59MY7Q4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = qlPreviewExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhiayang.mkvQLT.qlPreviewExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B05077323B6432600A9BDB9 /* Build configuration list for PBXProject "mkvQLT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B05078923B6432A00A9BDB9 /* Debug */,
+				2B05078A23B6432A00A9BDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B0507A023B6434D00A9BDB9 /* Build configuration list for PBXNativeTarget "qlThumbnailExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B0507A123B6434D00A9BDB9 /* Debug */,
+				2B0507A223B6434D00A9BDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B459B7123BB09A9005B0FA1 /* Build configuration list for PBXNativeTarget "mkvQLGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B459B7223BB09A9005B0FA1 /* Debug */,
+				2B459B7323BB09A9005B0FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BD4C5C823B9ED9E006F65EF /* Build configuration list for PBXNativeTarget "mkvQLT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD4C5C923B9ED9E006F65EF /* Debug */,
+				2BD4C5CA23B9ED9E006F65EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF3FF5823BB55CD007B06F4 /* Build configuration list for PBXNativeTarget "qlPreviewExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF3FF5623BB55CD007B06F4 /* Debug */,
+				2BF3FF5723BB55CD007B06F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B05077023B6432600A9BDB9 /* Project object */;
+}

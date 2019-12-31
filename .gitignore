@@ -1,0 +1,9 @@
+DerivedData
+.DS_Store
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.xcworkspace
+*.xcuserdata
+xcshareddata
+xcuserdata
